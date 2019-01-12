@@ -3,7 +3,7 @@ public class PartTimeEmployee extends Employee {
 
   private double wage;
 
-  public PartTimeEmployee(String name, String vat, double hours, double wage, double hours) {
+  public PartTimeEmployee(String name, String vat, double hours, double wage) {
     super(name, vat, hours);
     this.wage = wage;
 
@@ -24,7 +24,7 @@ public class PartTimeEmployee extends Employee {
     System.out.println("Ονοματεπώνυμο υπαλλήλου: " + getName());
     System.out.println("Αριθμός φορολογικού μητρώου: " + getVat());
     System.out.println("Ώρες εργασίας: " + getHours);
-    System.out.println("Σύνολο μήνα: " + (partTimeEmployee.calculateSalary()) + " Ευρώ");
+    System.out.println("Σύνολο μήνα: " + calculateSalary() + " Ευρώ");
     System.out.println("Παρατηρήσεις");
     System.out.println("Ωριαία αποζημίωση" + wage + " Ευρώ");
 

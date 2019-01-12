@@ -11,6 +11,7 @@ public abstract class Employee {
   }
 
   public abstract double calculateSalary();
+  public abstract void printPayrollReport();
 
   /**
    * @return the name
