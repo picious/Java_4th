@@ -1,17 +1,16 @@
-public class Employee {
+public abstract class Employee {
 
   private String name;
   private String vat;
+  private double hours;
 
-  public Employee(String name, String vat) {
+  public Employee(String name, String vat, double hours) {
     this.name = name;
     this.vat = vat;
+    this.hours = hours;
   }
 
-  public void printDemo() {
-    System.out.println("Employee: " + name + " with vat: " + vat);
-
-  }
+  public abstract double calculateSalary();
 
   /**
    * @return the name
@@ -39,6 +38,20 @@ public class Employee {
    */
   public void setVat(String vat) {
     this.vat = vat;
+  }
+
+  /**
+   * @return the hours
+   */
+  public double getHours() {
+    return hours;
+  }
+
+  /**
+   * @param hours the hours to set
+   */
+  public void setHours(double hours) {
+    this.hours = hours;
   }
 
 }
