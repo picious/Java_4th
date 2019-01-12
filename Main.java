@@ -1,7 +1,7 @@
 public class Main {
 
   public static void main(String[] args) {
-    Employee[] array = new Employee[50];
+    Employee[] employees = new Employee[50];
 
     employees.add(new Employee("John", "1211"));
     employees.add(new Employee("John2", "2222"));
