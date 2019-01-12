@@ -7,7 +7,7 @@ public class FullTimeEmployee extends Employee {
   public FullTimeEmployee(String name, String vat, double hours, double monthlySalary) {
     super(name, vat, hours);
     this.monthlySalary = monthlySalary;
-    this.contribution = contribution;
+    
 
   }
 
