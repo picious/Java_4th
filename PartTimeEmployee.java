@@ -3,7 +3,7 @@ public class PartTimeEmployee extends Employee {
 
   private double wage;
 
-  /*
+  /**
    * Τα δεδομένα που θα διαχειρίζεται η κλάση PartTimeEmployee θα είναι το
    * ονοματεπώνυμο του υπαλλήλου, ο αριθμός φορολογικού μητρώου, η ωριαία
    * αποζημίωση και ο αριθμός των ωρών εργασίας στη διάρκεια ενός μήνα
@@ -14,7 +14,7 @@ public class PartTimeEmployee extends Employee {
 
   }
 
-   /* Υπολογισμός και επιστροφή του συνόλου για τον τρέχοντα μήνα */
+  /** Υπολογισμός και επιστροφή του συνόλου για τον τρέχοντα μήνα */
   public double calculateSalary() {
     double monthTotal = wage * getHours();
     if (monthTotal < 500) {
@@ -24,6 +24,7 @@ public class PartTimeEmployee extends Employee {
     }
   }
 
+  /** Εκτύπωση κατάσταση μισθοδοσίας */
   public void printPayrollReport() {
 
     System.out.println("ΚΑΤΑΣΤΑΣΗ ΜΙΣΘΟΔΟΣΙΑΣ ΩΡΟΜΙΣΘΙΟΥ ΥΠΑΛΛΗΛΟΥ");
