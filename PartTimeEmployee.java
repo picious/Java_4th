@@ -3,8 +3,8 @@ public class PartTimeEmployee extends Employee {
 
   private double wage;
 
-  public PartTimeEmployee(String name, String vat, double hours, double wage) {
-    super(name, vat, hours);
+  public PartTimeEmployee(String name, String vat, double wage) {
+    super(name, vat, 0);
     this.wage = wage;
 
   }
@@ -19,11 +19,11 @@ public class PartTimeEmployee extends Employee {
   }
 
   public void printPayrollReport() {
-    super.printPayrollReport();
+    
     System.out.println("ΚΑΤΑΣΤΑΣΗ ΜΙΣΘΟΔΟΣΙΑΣ ΩΡΟΜΙΣΘΙΟΥ ΥΠΑΛΛΗΛΟΥ");
     System.out.println("Ονοματεπώνυμο υπαλλήλου: " + getName());
     System.out.println("Αριθμός φορολογικού μητρώου: " + getVat());
-    System.out.println("Ώρες εργασίας: " + getHours);
+    System.out.println("Ώρες εργασίας: " + getHours());
     System.out.println("Σύνολο μήνα: " + calculateSalary() + " Ευρώ");
     System.out.println("Παρατηρήσεις");
     System.out.println("Ωριαία αποζημίωση" + wage + " Ευρώ");
@@ -34,14 +34,14 @@ public class PartTimeEmployee extends Employee {
   /**
    * @return the wage
    */
-  public int getWage() {
+  public double getWage() {
     return wage;
   }
 
   /**
    * @param wage the wage to set
    */
-  public void setWage(int wage) {
+  public void setWage(double wage) {
     this.wage = wage;
   }
 

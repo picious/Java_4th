@@ -4,8 +4,8 @@ public class FullTimeEmployee extends Employee {
   private double contribution;
   private double overtime;
 
-  public FullTimeEmployee(String name, String vat, double hours, double monthlySalary) {
-    super(name, vat, hours);
+  public FullTimeEmployee(String name, String vat, double monthlySalary) {
+    super(name, vat, 0);
     this.monthlySalary = monthlySalary;
     
 
@@ -21,7 +21,7 @@ public class FullTimeEmployee extends Employee {
   }
 
   public void printPayrollReport() {
-    super.printPayrollReport();
+    
     System.out.println("ΚΑΤΑΣΤΑΣΗ ΜΙΣΘΟΔΟΣΙΑΣ ΥΠΑΛΛΗΛΟΥ ΠΛΗΡΟΥΣ ΑΠΑΣΧΟΛΗΣΗΣ");
     System.out.println("Ονοματεπώνυμο υπαλλήλου: " + getName());
     System.out.println("Αριθμός φορολογικού μητρώου: " + getVat());
@@ -29,9 +29,11 @@ public class FullTimeEmployee extends Employee {
     System.out.println("Σύνολο μήνα: " + calculateSalary() + " Ευρώ");
     System.out.println("Παρατηρήσεις");
     System.out.println("Οι ώρες εργασίας αναφέρονται σε τυχόν υπερωρίες");
-    System.out.println("Μηνιαίος μισθός = " + wage + " Ευρώ");
+    System.out.println("Μηνιαίος μισθός = " + monthlySalary + " Ευρώ");
     System.out.println("Συνεισφορά για το σωματείο υπαλλήλων = " + contribution + " Ευρώ");
     
   }
+
+
 
 }
