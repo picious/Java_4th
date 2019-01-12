@@ -3,12 +3,19 @@
   private double monthlySalary;
   private double contribution;
 
+  /*
+   * Τα δεδομένα που θα διαχειρίζεται η κλάση FullTimeEmployee θα είναι το
+   * ονοματεπώνυμο του υπαλλήλου, ο αριθμός φορολογικού μητρώου, ο μηνιαίος
+   * μισθός, ο αριθμός των ωρών εργασίας πέραν του ωραρίου (υπερωρίες) στη
+   * διάρκεια ενός μήνα και η συνεισφορά στο σωματείο υπαλλήλων.
+   */
   public FullTimeEmployee(String name, String vat, double monthlySalary) {
     super(name, vat, 0);
     this.monthlySalary = monthlySalary;
 
   }
 
+  /* Υπολογισμός και επιστροφή του συνόλου για τον τρέχοντα μήνα */
   public double calculateSalary() {
     double monthTotal = monthlySalary * ((0.005 * getHours()) + 1);
     if (monthTotal > 1500) {

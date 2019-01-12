@@ -1,5 +1,10 @@
 ﻿import java.util.Scanner;
 
+/* 
+ * Ορίστε μια κλάση, έστω PayrollRegistry, 
+ * κάθε αντικείμενο της οποίας θα λειτουργεί ως μητρώο των στοιχείων μισθοδοσίας
+ * των υπαλλήλων ενός υποκαταστήματος της προαναφερθείσας αλυσίδας πολυκαταστημάτων
+ */
 public class PayrollRegistry {
 
   private Employee[] employees;

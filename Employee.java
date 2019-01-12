@@ -4,6 +4,11 @@
   private String vat;
   private double hours;
 
+  /*
+   * Τα κοινά χαρακτηριστικά και λειτουργίες μπορούν να οριστούν σε μια κλάση, έ
+   * τω Employee ,  η οποία στη συνέχεια θα χρησιμοποιηθεί ως υπερκλάση των P
+   * rtTimeEmployee
+    */
   public Employee(String name, String vat, double hours) {
     this.name = name;
     this.vat = vat;
