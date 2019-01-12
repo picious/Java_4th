@@ -1,4 +1,4 @@
-public abstract class Employee {
+﻿public abstract class Employee {
 
   private String name;
   private String vat;
@@ -11,6 +11,7 @@ public abstract class Employee {
   }
 
   public abstract double calculateSalary();
+
   public abstract void printPayrollReport();
 
   /**

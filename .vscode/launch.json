@@ -1,12 +1,17 @@
 {
-  "configurations": [
+  "configurations": [{
+      "type": "java",
+      "name": "CodeLens (Launch) - Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "console": "externalTerminal"
+    },
     {
       "type": "java",
       "name": "CodeLens (Launch) - Main",
       "request": "launch",
       "mainClass": "Main",
       "projectName": "Java_4th_c3dfff4d"
-      
     },
     {
       "type": "java",

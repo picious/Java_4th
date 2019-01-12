@@ -1,4 +1,4 @@
-
+﻿
 public class PartTimeEmployee extends Employee {
 
   private double wage;
@@ -19,14 +19,15 @@ public class PartTimeEmployee extends Employee {
   }
 
   public void printPayrollReport() {
-    
+
     System.out.println("ΚΑΤΑΣΤΑΣΗ ΜΙΣΘΟΔΟΣΙΑΣ ΩΡΟΜΙΣΘΙΟΥ ΥΠΑΛΛΗΛΟΥ");
     System.out.println("Ονοματεπώνυμο υπαλλήλου: " + getName());
     System.out.println("Αριθμός φορολογικού μητρώου: " + getVat());
     System.out.println("Ώρες εργασίας: " + getHours());
     System.out.println("Σύνολο μήνα: " + calculateSalary() + " Ευρώ");
     System.out.println("Παρατηρήσεις");
-    System.out.println("Ωριαία αποζημίωση" + wage + " Ευρώ");
+    System.out.println("Ωριαία αποζημίωση " + wage + " Ευρώ" + "\n");
+    
 
   }
 
